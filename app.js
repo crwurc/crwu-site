@@ -3,7 +3,7 @@
    (see google-sheet-script.gs). */
 (function () {
   // The sheet's Apps Script web app URL (Deploy > Web app).
-  var SHEET_URL = '';
+  var SHEET_URL = 'https://script.google.com/macros/s/AKfycbwn4lbR60LHz9Tp90YNJKiCjft1uGcUnNJRtEl8RShgx9tVZb25a9ak-bbkwcLRHqJy/exec';
 
   // Repeat the rallying cry twice so the marquee loops seamlessly.
   var tape = document.getElementById('tape');
