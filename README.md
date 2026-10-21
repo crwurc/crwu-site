@@ -5,13 +5,11 @@ Plain HTML, CSS and JavaScript. No build step.
 
 ## Hosting
 
-Cloudflare Pages, connected to this repo. Every push to `main` goes live.
+Cloudflare Workers (static assets) at https://crwu.club, connected to this repo.
+Every push to `main` goes live.
 
-- Framework preset: None
-- Build command: (blank)
-- Build output directory: `/`
 
-Security headers live in `_headers`.
+Security headers live in `_headers`; `.assetsignore` keeps the repo notes off the site.
 
 ## Sign-ups
 
