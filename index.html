@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Come Run With Us · CRWU</title>
+<meta name="description" content="CRWU is a free run club in Riverside, CA. Every Thursday at 6:30 PM. One 5K loop. Any pace.">
+<meta name="theme-color" content="#0B0A08">
+<meta property="og:title" content="Come Run With Us · CRWU">
+<meta property="og:description" content="Every Thursday, 6:30 PM, Riverside. One 5K loop. Any pace.">
+<meta property="og:image" content="/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Anton';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/anton-latin.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-display:swap;src:url(/fonts/archivo-latin.woff2) format('woff2')}
+/* One column: tape strip, wordmark, two lines about us, the sign-up form. */
+:root{
+  --blacktop:#0B0A08;
+  --asphalt:#15130F;
+  --line:#2A2721;
+  --chalk:#F4F1E6;
+  --muted:#9B968A;
+  --tape:#EDE72E;
+  --sunset:#F2691D;
+  --display:'Anton','Arial Narrow',Impact,sans-serif;
+  --body:'Archivo','Helvetica Neue',Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--blacktop);color:var(--chalk);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden;
+  background-image:radial-gradient(120% 60% at 50% 0%,rgba(242,105,29,.22),rgba(242,105,29,0) 60%)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:3px solid var(--tape);outline-offset:3px}
+a{color:inherit}
+.spark{color:var(--tape)}
+
+.tape{background:var(--tape);color:var(--blacktop);overflow:hidden;white-space:nowrap;border-bottom:2px solid var(--blacktop);font-family:var(--display);letter-spacing:.12em;font-size:.9rem;padding-block:.4rem}
+.tape .run{display:inline-flex;animation:tape 40s linear infinite}
+.tape .run span{padding-right:.6rem}
+@keyframes tape{to{transform:translateX(-50%)}}
+
+main{max-width:600px;margin:0 auto;padding:56px max(20px,env(safe-area-inset-right,0px)) 40px max(20px,env(safe-area-inset-left,0px))}
+.where{font-weight:900;text-transform:uppercase;letter-spacing:.24em;font-size:.7rem;color:var(--muted);margin:0 0 1.2rem}
+h1{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(3.6rem,17vw,6.6rem);line-height:.9;margin:0;transform:skewX(-8deg);transform-origin:left bottom}
+.cry{display:inline-block;margin:1.6rem 0 0;background:var(--tape);color:var(--blacktop);font-family:var(--display);font-size:1.35rem;letter-spacing:.14em;padding:.25rem 1rem;transform:skewX(-8deg)}
+.about{margin:1.8rem 0 0;font-size:1.08rem;max-width:52ch}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:1.4rem 0 0;padding:0;list-style:none}
+.facts li{border:1px solid var(--line);padding:.4rem .75rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem}
+.meet{margin:.9rem 0 0;color:var(--muted);font-size:.9rem}
+
+.card{margin-top:44px;background:var(--asphalt);border:1px solid var(--line);padding:28px 24px}
+h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:2rem;line-height:1;margin:0 0 .4rem}
+.card > p{margin:0 0 1.4rem;color:var(--muted);font-size:.95rem}
+form{display:grid;gap:16px}
+label,.legend{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;color:var(--muted);margin-bottom:.4rem}
+.opt{font-weight:600;letter-spacing:.06em;text-transform:none}
+input[type=text],input[type=email],input[type=tel]{width:100%;background:var(--blacktop);color:var(--chalk);border:1px solid var(--line);border-radius:0;padding:.85rem .9rem;font:inherit;font-size:1rem}
+input:focus{outline:none;border-color:var(--tape)}
+fieldset{border:none;margin:0;padding:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;margin:0}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.chip span{display:inline-block;border:1px solid var(--line);padding:.55rem .85rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;color:var(--chalk);cursor:pointer}
+.chip input:checked + span{background:var(--tape);color:var(--blacktop);border-color:var(--tape)}
+.chip input:focus-visible + span{outline:3px solid var(--tape);outline-offset:2px}
+.check{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;cursor:pointer;text-transform:none;letter-spacing:normal;font-weight:400;color:var(--chalk);margin:0}
+.check input{width:18px;height:18px;margin-top:3px;accent-color:var(--tape);flex:none}
+.hp{position:absolute;left:-9999px}
+button{font-family:var(--body);font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.85rem;padding:1rem 1.4rem;border:2px solid var(--tape);background:var(--tape);color:var(--blacktop);cursor:pointer;width:100%}
+button:hover{background:var(--chalk);border-color:var(--chalk)}
+button:disabled{opacity:.6;cursor:wait}
+.status{margin:0;font-size:.92rem;min-height:1.4em}
+.status.err{color:var(--sunset)}
+.done h2{margin-bottom:.6rem}
+.done p{margin:0;color:var(--chalk)}
+
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+footer nav{display:flex;gap:18px}
+footer a{font-weight:900;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;color:var(--chalk);text-decoration:none}
+footer a:hover{color:var(--tape)}
+</style>
+</head>
+<body>
+<div class="tape" aria-hidden="true"><div class="run" id="tape"></div></div>
+
+<main>
+  <p class="where">CRWU · Riverside, CA</p>
+  <h1>Come run<br>with us<span class="spark">✦</span></h1>
+  <div class="cry">ANY PACE.</div>
+
+  <p class="about">We're a free neighborhood run club. Every Thursday we meet up, run one 5K loop together, and hang out after. Walkers, strollers and first-timers welcome. You don't have to be fast. You have to be there.</p>
+  <ul class="facts">
+    <li>Thursdays</li><li>6:30 PM</li><li>5K · 3.1 mi</li><li>Free</li>
+  </ul>
+  <p class="meet">Meet in front of Goodwin's Market &amp; J'Bez, 191 W Big Springs Rd.</p>
+
+  <section class="card" aria-labelledby="join-title">
+    <div id="formWrap">
+      <h2 id="join-title">Sign up</h2>
+      <p>Get Thursday reminders and run updates.</p>
+      <form id="signupForm" novalidate>
+        <div class="hp" aria-hidden="true"><label for="f-web">Website</label><input id="f-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <div>
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="f-phone">Phone <span class="opt">(optional, for text reminders)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <fieldset>
+          <legend class="legend">How you're coming</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="mode" id="m-walk" value="Walking"><span>Walking</span></label>
+            <label class="chip"><input type="radio" name="mode" id="m-mix" value="Run / walk"><span>Run / walk</span></label>
+            <label class="chip"><input type="radio" name="mode" id="m-run" value="Running" checked><span>Running</span></label>
+            <label class="chip"><input type="radio" name="mode" id="m-stroller" value="With a stroller"><span>Stroller</span></label>
+          </div>
+        </fieldset>
+        <label class="check" for="f-remind"><input type="checkbox" id="f-remind" name="remind" checked><span>Send me Thursday reminders.</span></label>
+        <button type="submit" id="submitBtn">I'm in</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="done" id="done" hidden>
+      <h2>You're on the list<span class="spark">✦</span></h2>
+      <p id="doneMsg">See you Thursday at 6:30 PM.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Come Run With Us · Thursdays 6:30 PM</span>
+    <nav aria-label="Follow CRWU">
+      <a href="https://www.instagram.com/crwurc/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.strava.com/clubs/2317909" target="_blank" rel="noopener">Strava</a>
+    </nav>
+  </footer>
+</main>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
